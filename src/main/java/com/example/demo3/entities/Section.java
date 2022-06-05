@@ -23,6 +23,12 @@ public class Section {
         this.document = document;
     }
 
+    public Section(String title, String text, Document document) {
+        this.title = title;
+        this.text = text;
+        this.document = document;
+    }
+
     @JsonIgnore
     public Document getDocument() { return document; }
 }
